@@ -1,17 +1,29 @@
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        print(set(s))
+        print(s.removesuffix(""))
+        t = len(s)
+        for i in range(t):
+            if s[::-1] == " ":
+                s.removesuffix(" ")
+            else:
+                break
         b = list(s[::-1])
         # if s in ascii:
         #     return 1
         count = 0
-        for i in range(len(s)):
-            if b[i] ==" ":
-                continue
+        for i in b:
+            if b[i] == " ":
+                break
             else:
                 count += 1
-                if b[i + 1] == " ":
-                    break
+
+        # for i in range(len(s)):
+        #     if b[i] ==" ":
+        #         continue
+        #     else:
+        #         count += 1
+        #         if b[i + 1] == " ":
+        #             break
         return count
 
 
