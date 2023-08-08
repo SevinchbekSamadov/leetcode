@@ -3,7 +3,6 @@ class Solution:
         while n > 9:
             s = 0
             for i in range(len(str(n))):
-                print(str(n)[i])
                 s += int(str(n)[i]) ** 2
             n = s
         if n == 1 or n == 7:

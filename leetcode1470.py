@@ -7,8 +7,8 @@ class Solution:
         # return a
         def get_result():
             for i in range(n):
-                yield nums[i] , nums[i + n]
-                # yield nums[i + n]
+                yield nums[i] 
+                yield nums[i + n]
         a = get_result()
         return list(a)
 a = Solution()
