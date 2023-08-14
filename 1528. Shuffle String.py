@@ -5,9 +5,10 @@ class Solution:
         def getResult():
             for i in indice:
                 yield s[indices.index(i)]
-        for i in list(getResult()):
-            natija += i
-        return natija
+        return ''.join(getResult()) # join() string larni birlashtiradi
+        # for i in list(getResult()):
+        #     natija += i
+        # return natija
         # indice = sorted(indices)
         # natija = ''
         # for i in indice:
